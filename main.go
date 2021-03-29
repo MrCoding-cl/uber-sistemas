@@ -1,18 +1,14 @@
 package main
 
 import (
-	"fmt"
 	"./helper"
+	"fmt"
 )
 
 func main(){
-	dato, err :=helper.LeerDat("datos/noche.dat")
+	dato, _ :=helper.LeerDat("datos/noche.dat")
+	fmt.Printf("%s",dato)
 
-	if err != nil {
-		fmt.Println(err)
-		//Si ocurre un error este se imprime
-	}
-	fmt.Println(dato[0]+dato[1])
 }
 
 
